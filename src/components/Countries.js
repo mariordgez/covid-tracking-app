@@ -43,13 +43,13 @@ const Countries = () => {
     .map((country, index) => (
       <LinkContainer key={country.id} to={`/country/${country.id}`}>
         <Col
-          xs={6}
+          xs={12}
           sm={6}
           md={3}
           className={`
           d-flex flex-column justify-content-between
           align-items-end
-          ${[1, 0, 1, 0][index % 4] ? 'bg-pink-dark' : 'bg-pink-light'}
+          ${[1, 0, 0, 1][index % 2] ? 'bg-blue-dark' : 'bg-blue-light'}
         `}
         >
           <span
@@ -67,7 +67,7 @@ const Countries = () => {
     ));
 
   return (
-    <div className="pt-3 bg-pink-light">
+    <div className="pt-3 bg-blue-home">
       <Row className="m-0">
         <Col xs={6} sm={6} md={6} className="d-flex justify-content-end">
           <img src="" alt="World" height="150px" />

@@ -31,12 +31,16 @@ code {
   }
 }
 
-.bg-pink-dark {
+.bg-blue-dark {
   background-color: #1404a3;
 }
 
-.bg-pink-light {
+.bg-blue-light {
   background-color: #5153ff;
+}
+
+.bg-blue-home {
+  background-color: #1b007c;
 }
 
 body {
