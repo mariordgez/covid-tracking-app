@@ -49,7 +49,7 @@ const Countries = () => {
           className={`
           d-flex flex-column justify-content-between
           align-items-end
-          ${[1, 0, 0, 1][index % 4] ? 'bg-pink-dark' : 'bg-pink-light'}
+          ${[1, 0, 1, 0][index % 4] ? 'bg-pink-dark' : 'bg-pink-light'}
         `}
         >
           <span
