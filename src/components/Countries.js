@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { bindActionCreators } from 'redux';
-import { loadCountries } from '../redux/rockets/rockets';
+import { loadCountries } from '../redux/countries/countries';
 
 const Rockets = () => {
   const dispatch = useDispatch();

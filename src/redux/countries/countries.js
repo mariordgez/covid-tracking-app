@@ -2,28 +2,11 @@ const URL = 'https://api.covid19tracking.narrativa.com/api/';
 
 // Actions
 const LOAD = 'spaceships/rockets/LOAD';
-const RESERVE_ROCKET = 'spaceships/rockets/RESERVE_ROCKET';
-const CANCEL_ROCKET_RESERVATION = 'spaceships/rockets/CANCEL_ROCKET_RESERVATION';
-
 // Reducer
 export default (state = [], action) => {
   switch (action.type) {
     case LOAD:
       return action.state;
-    /* case RESERVE_ROCKET: {
-      const newState = state.map((rocket) => {
-        if (rocket.id !== action.id) return rocket;
-        return { ...rocket, reserved: true };
-      });
-      return newState;
-    }
-    case CANCEL_ROCKET_RESERVATION: {
-      const newState = state.map((rocket) => {
-        if (rocket.id !== action.id) return rocket;
-        return { ...rocket, reserved: false };
-      });
-      return newState;
-    } */
     default:
       return state;
   }
@@ -58,13 +41,3 @@ export const loadCountries = () => async (dispatch) => {
 
   dispatch({ type: LOAD, state });
 };
-
-export const reserveRocket = (id) => ({
-  type: RESERVE_ROCKET,
-  id,
-});
-
-export const cancelRocketReservation = (id) => ({
-  type: CANCEL_ROCKET_RESERVATION,
-  id,
-});
