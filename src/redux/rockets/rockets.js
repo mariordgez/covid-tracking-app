@@ -1,4 +1,4 @@
-const URL = 'https://api.covid19tracking.narrativa.com/api/2020-03-22';
+const URL = 'https://api.covid19tracking.narrativa.com/api/';
 
 // Actions
 const LOAD = 'spaceships/rockets/LOAD';
@@ -31,17 +31,21 @@ export default (state = [], action) => {
 
 // Action Creators
 export const loadCountries = () => async (dispatch) => {
-  const res = await fetch(URL);
+  const date = new Date();
+  date.setDate(date.getDate() - 1);
+  const today = date.toISOString().split('T')[0];
+  const newURL = URL + today;
+  const res = await fetch(newURL);
   const resJSON = await res.json();
   const data = await resJSON.dates;
-  const countries = await data['2020-03-22'].countries;
+  const countries = await data[today].countries;
   const result = [];
   const keys = Object.keys(countries);
   const values = Object.values(countries);
   for (let i = 0; i < keys.length; i += 1) {
     result.push(keys[i], values[i]);
   }
-  console.log(result);
+
   const state = result
     .filter((country) => country.id !== undefined)
     .map((country) => ({
@@ -49,6 +53,7 @@ export const loadCountries = () => async (dispatch) => {
       name: country.name,
       today_confirmed: country.today_confirmed,
       today_deaths: country.today_deaths,
+      regions: country.regions,
     }));
 
   dispatch({ type: LOAD, state });
