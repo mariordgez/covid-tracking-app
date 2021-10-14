@@ -10,22 +10,7 @@ const NavBar = () => {
     {
       id: 1,
       path: '/',
-      name: 'Rockets',
-    },
-    {
-      id: 2,
-      path: '/missions',
-      name: 'Missions',
-    },
-    {
-      id: 3,
-      path: '/dragons',
-      name: 'Dragons',
-    },
-    {
-      id: 4,
-      path: '/my-profile',
-      name: 'My Profile',
+      name: 'Countries',
     },
   ];
   return (
@@ -33,7 +18,7 @@ const NavBar = () => {
       <Container className="d-flex justify-content-between">
         <Navbar.Brand href="/">
           <Image src={planet} alt="App logo" width="50" className="me-3" />
-          SpaceX Ships
+          Covid Today
         </Navbar.Brand>
         <div>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

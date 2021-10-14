@@ -1,15 +1,15 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { bindActionCreators } from 'redux';
-import { loadRockets } from '../redux/rockets/rockets';
+import { loadCountries } from '../redux/rockets/rockets';
 
 const Rockets = () => {
   const dispatch = useDispatch();
-  const loadRocketsAction = bindActionCreators(loadRockets, dispatch);
-  const rockets = useSelector((state) => state.rockets);
+  const loadCountriesAction = bindActionCreators(loadCountries, dispatch);
+  const countries = useSelector((state) => state.countries);
 
   useEffect(() => {
-    if (rockets.length === 0) loadRocketsAction();
+    if (countries.length === 0) loadCountriesAction();
     return () => null;
   }, []);
 

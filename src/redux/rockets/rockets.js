@@ -10,7 +10,7 @@ export default (state = [], action) => {
   switch (action.type) {
     case LOAD:
       return action.state;
-    case RESERVE_ROCKET: {
+    /* case RESERVE_ROCKET: {
       const newState = state.map((rocket) => {
         if (rocket.id !== action.id) return rocket;
         return { ...rocket, reserved: true };
@@ -23,14 +23,14 @@ export default (state = [], action) => {
         return { ...rocket, reserved: false };
       });
       return newState;
-    }
+    } */
     default:
       return state;
   }
 };
 
 // Action Creators
-export const loadRockets = () => async (dispatch) => {
+export const loadCountries = () => async (dispatch) => {
   const res = await fetch(URL);
   const resJSON = await res.json();
   const data = await resJSON.dates;
@@ -41,7 +41,7 @@ export const loadRockets = () => async (dispatch) => {
   for (let i = 0; i < keys.length; i += 1) {
     result.push(keys[i], values[i]);
   }
-
+  console.log(result);
   const state = result
     .filter((country) => country.id !== undefined)
     .map((country) => ({
