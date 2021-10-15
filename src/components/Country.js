@@ -34,7 +34,7 @@ const Country = () => {
   );
 
   return (
-    <div className="pt-3 bg-blue-light">
+    <div className="pt-3 bg-blue-home">
       <Row className="m-0">
         <Col xs={6} sm={6} md={6} className="d-flex justify-content-end">
           <img src={earth} alt="earth" height="150px" />
@@ -69,7 +69,7 @@ const Country = () => {
               </div>
             </li>
             <li className="navLink w-100 stats">
-              <div className="d-flex justify-content-between align-items-center p-2 text-white bg-blue-home">
+              <div className="d-flex justify-content-between align-items-center p-2 text-white bg-blue-light">
                 <h5 className="m-0 fw-light">
                   {' '}
                   Today&apos;s deaths:
