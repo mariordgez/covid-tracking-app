@@ -32,6 +32,8 @@ In this task, I worked with the real live data from a COVID tracking API. My tas
 
 Live demo for this project can be found in this [link](https://clever-booth-711741.netlify.app/).
 
+Live presentation for project can be found in this [link](https://www.loom.com/share/9412d321918f4d1e960f255f7af0698a)
+
 ## Getting Started
 
 To run this project, you only need a computer with internet connection and a browser installed, and follow these steps:
