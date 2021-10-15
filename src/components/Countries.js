@@ -46,7 +46,7 @@ const Countries = () => {
         <Col
           xs={12}
           sm={6}
-          md={3}
+          md={6}
           className={`
           d-flex flex-column justify-content-between
           align-items-end
