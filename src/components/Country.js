@@ -28,7 +28,7 @@ const Country = () => {
     ))
   ) : (
     <div className="bg-blue-dark text-white d-flex align-items-center p-2">
-      <h5 className="m-0 fw-light ps-3">These Regions Are Currently Not At Our Disposal</h5>
+      <h5 className="m-0 fw-light ps-3">These Regions Are Not Available</h5>
     </div>
   );
 
@@ -56,7 +56,7 @@ const Country = () => {
           {`${country.name.toUpperCase()} CASES BREAKDOWN`}
         </h6>
         <div>
-          <h2 className="stats-title">Country Breakdown 2020-10-10</h2>
+          <h2 className="stats-title">Country Today</h2>
           <ul key={country.id} className="flex flex-dir stat-container">
             <li className="navLink w-100 stats">
               Today&apos;s confirmed:
@@ -70,7 +70,7 @@ const Country = () => {
         </div>
       </Row>
       <h6 className="text-white fw-bold p-2 m-0">
-        {`${country.name.toUpperCase()} CASES BREAKDOWN BY REGION`}
+        {`${country.name.toUpperCase()} CASES REGION`}
       </h6>
       {regions}
     </div>
