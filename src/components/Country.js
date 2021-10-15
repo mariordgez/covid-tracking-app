@@ -1,6 +1,7 @@
 import { Row, Col } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import earth from '../img/earth.svg';
 
 const Country = () => {
   const params = useParams();
@@ -36,7 +37,7 @@ const Country = () => {
     <div className="pt-3 bg-blue-light">
       <Row className="m-0">
         <Col xs={6} sm={6} md={6} className="d-flex justify-content-end">
-          <img src="{Africa}" alt="Africa" height="150px" />
+          <img src={earth} alt="earth" height="150px" />
         </Col>
         <Col
           xs={6}
@@ -46,7 +47,7 @@ const Country = () => {
         >
           <h1 className="fw-bold m-0">{country ? country.name.toUpperCase() : 'Loading...'}</h1>
           <p>
-            {country ? Number(country.today_confirmed).toLocaleString() : '0'}
+            {country ? country.today_confirmed : '0'}
             Total Cases
           </p>
         </Col>
