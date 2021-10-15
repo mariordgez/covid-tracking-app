@@ -83,3 +83,4 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
+This project design is based on this design https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs). Made by Nelson Sakwa.
