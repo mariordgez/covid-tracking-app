@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rockets component Use Jest snapshots to test the Country component renders Country component as expected 1`] = `
+<DocumentFragment>
+  <nav
+    class="bg-blue-light navbar navbar-expand-lg navbar-light"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="me-auto d-flex justify-content-between flex-row w-100 navbar-nav"
+      >
+        <div
+          class="nav-item"
+        >
+          <a
+            aria-current="page"
+            class="fw-bold m-3 text-decoration-none text-white active"
+            href="/"
+          >
+            Home
+          </a>
+        </div>
+        <div
+          class="nav-item"
+        >
+          <a
+            aria-current="page"
+            class="fw-bold m-3 text-decoration-none text-white active"
+            href="/"
+          >
+            Countries
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div
+    class="pt-3 bg-blue-home"
+  >
+    <div
+      class="m-0 row"
+    >
+      <div
+        class="d-flex justify-content-end col-md-6 col-sm-6 col-6"
+      >
+        <img
+          alt="World"
+          height="150px"
+          src="earth.svg"
+        />
+      </div>
+      <div
+        class="p-0 text-white d-flex flex-column justify-content-center col-md-6 col-sm-6 col-6"
+      >
+        <h1
+          class="fw-bold m-0"
+        >
+          GLOBAL
+        </h1>
+        <p>
+           Total Cases
+        </p>
+      </div>
+    </div>
+    <div
+      class="pt-3 m-0 mt-4 bg-pink-dark row"
+      style="cursor: pointer;"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-2 col-sm-12 col-12"
+        >
+          <h6
+            class="text-white fw-bold m-0 p-2 d-inline-block"
+          >
+            STATS BY COUNTRY
+          </h6>
+        </div>
+        <div
+          class="col-md-4 col-sm-12 col-12"
+        >
+          <div
+            class="mb-3 input-group"
+          >
+            <span
+              class="input-group-prepend"
+            />
+            <input
+              class="form-control no-shadow"
+              placeholder="Search Specific Country"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

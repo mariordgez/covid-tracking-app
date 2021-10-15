@@ -1,7 +1,7 @@
 const URL = 'https://api.covid19tracking.narrativa.com/api/';
 
 // Actions
-const LOAD = 'spaceships/rockets/LOAD';
+const LOAD = 'covid-tracking-app/countries/LOAD';
 // Reducer
 export default (state = [], action) => {
   switch (action.type) {

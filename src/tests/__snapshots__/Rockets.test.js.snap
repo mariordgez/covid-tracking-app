@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Rockets component Use Jest snapshots to test the Rockets component renders Rockets component as expected 1`] = `
-<DocumentFragment>
-  <div />
-</DocumentFragment>
-`;
