@@ -1,7 +1,7 @@
 import { Row, Col } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import earth from '../img/earth.svg';
+import earth from '../img/earth.png';
 
 const Country = () => {
   const params = useParams();

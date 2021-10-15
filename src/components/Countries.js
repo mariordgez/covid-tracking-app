@@ -5,7 +5,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { Col, InputGroup, Row } from 'react-bootstrap';
 import { bindActionCreators } from 'redux';
 import { loadCountries } from '../redux/countries/countries';
-import earth from '../img/earth.svg';
+import earth from '../img/earth.png';
 
 const Filter = (props) => {
   const filterValues = (e) => {
