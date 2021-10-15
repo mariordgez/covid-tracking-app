@@ -44,7 +44,7 @@ const Countries = () => {
     .map((country, index) => (
       <LinkContainer key={country.id} to={`/country/${country.id}`}>
         <Col
-          xs={12}
+          xs={6}
           sm={6}
           md={6}
           className={`
