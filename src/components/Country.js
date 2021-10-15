@@ -14,8 +14,8 @@ const Country = () => {
     country.regions.map((region, index) => (
       <div
         className={`d-flex justify-content-between
-        align-items-center p-2 text-white
-        ${index % 2 ? 'bg-blue-dark' : 'bg-blue-light'}`}
+      align-items-center p-2 text-white
+      ${index % 2 ? 'bg-blue-dark' : 'bg-blue-light'}`}
         key={region.id}
       >
         <h5 className="m-0 fw-light">{region.name}</h5>
@@ -56,23 +56,31 @@ const Country = () => {
         <h6 className="text-white fw-bold p-2 m-0">
           {`${country.name.toUpperCase()} CASES BREAKDOWN`}
         </h6>
-        <div>
+        <div className="text-white">
           <h2 className="stats-title">Country Today</h2>
           <ul key={country.id} className="flex flex-dir stat-container">
             <li className="navLink w-100 stats">
-              Today&apos;s confirmed:
-              {country.today_confirmed}
+              <div className="d-flex justify-content-between align-items-center p-2 text-white bg-blue-dark">
+                <h5 className="m-0 fw-light">
+                  {' '}
+                  Today&apos;s confirmed:
+                  {country.today_confirmed}
+                </h5>
+              </div>
             </li>
             <li className="navLink w-100 stats">
-              Today&apos;s deaths:
-              {country.today_deaths}
+              <div className="d-flex justify-content-between align-items-center p-2 text-white bg-blue-home">
+                <h5 className="m-0 fw-light">
+                  {' '}
+                  Today&apos;s deaths:
+                  {country.today_deaths}
+                </h5>
+              </div>
             </li>
           </ul>
         </div>
       </Row>
-      <h6 className="text-white fw-bold p-2 m-0">
-        {`${country.name.toUpperCase()} CASES REGION`}
-      </h6>
+      <h6 className="text-white fw-bold p-2 m-0">{`${country.name.toUpperCase()} CASES REGION`}</h6>
       {regions}
     </div>
   );
