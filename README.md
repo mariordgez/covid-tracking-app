@@ -1,46 +1,88 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+<p align="center">
+  <a href="https://www.microverse.org/">
+    <img alt="Microverse" src="https://img.shields.io/badge/-Microverse-blueviolet?style=flat-square">
+  </a>
+  <a href="https://github.com/Emmanuelaaron/spaceships">
+    <img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/Emmanuelaaron/spaceships/dev?color=blue&style=flat-square">
+  </a>
+  <a href="https://github.com/Emmanuelaaron/spaceships">
+    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Emmanuelaaron/spaceships?color=cyan&label=%E2%98%85%20stars%20&style=flat-square">
+  </a>
+</p>
 
-## Available Scripts
+# Space Ships
 
-In the project directory, you can run:
-mkmk
-v
+## About
 
-### `yarn start`
+In this task, I worked with the real live data from a COVID tracking API. My task was to build a web application with a filter function, as well as displaying different information from the API
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Built With
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- HTML, CSS, JavaScript;
+- ReactJS, Redux;
+- VisualStudio Code, Git, & GitHub;
 
-### `yarn test`
+## Pre-requisites
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- NodeJs (v. 14.17)
+- YarnJs (v. 1.22.10)
+- Git
 
-### `yarn build`
+## Live Demo
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Live demo for this project can be found in this [link](https://clever-booth-711741.netlify.app/).
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Live presentation for project can be found in this [link](https://www.loom.com/share/9412d321918f4d1e960f255f7af0698a)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `yarn eject`
+To run this project, you only need a computer with internet connection and a browser installed, and follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. In your terminal, in the folder of your preference, type the following bash command to clone this repository:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+git clone git@github.com:mariordgez/covid-tracking-app.git
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. Now that you have already cloned the repo run the following commands to get the project up and running:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```sh
+cd covid-tracking-app
+yarn
+yarn start
+```
 
-## Learn More
+This should start your local server in [http://localhost:3000/](http://localhost:3000/). To stop it, hit `<CTRL> + C` on your keyboard.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Run tests
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To test the App's components and logic, please, run the following command:
+
+```sh
+yarn test --watchAll
+```
+
+When the tests are finished, just hit `q` key to leave the watch mode for the tests.
+
+## Author
+
+👤 **Mario Alberto Rodriguez Cota**
+
+- GitHub: [@mariordgez](https://github.com/mariordgez)
+- Twitter: [@MarioRo75396624](https://twitter.com/MarioRo75396624)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/mario-alberto-rodriguez-cota-a2860a205)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Emmanuelaaron/spaceships/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
+This project design is based on this design https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs). Made by Nelson Sakwa.
